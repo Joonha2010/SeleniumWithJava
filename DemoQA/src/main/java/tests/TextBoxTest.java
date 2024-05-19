@@ -12,6 +12,11 @@ import pages.TextBoxPage;
 public class TextBoxTest {
 @Test
 public void submitSuccessfully (){
+	String fullname = "Ha";
+	String email = "Hajoon@gmail.com";
+	String currentAddress ="Vietnam"; 
+	String permanentAddress = "Ha Noi";
+	
 	//Open browser
 	String projectPath= System.getProperty("user.dir");
 	System.setProperty("webdriver.chrome.driver", projectPath +"\\driver\\chromedriver.exe");
@@ -28,10 +33,10 @@ public void submitSuccessfully (){
 	HomePage homePage = new HomePage(driver);
 	
 	ElementsPage elementsPage= homePage.clickElements();
-	elementsPage.zoomOut();
 	TextBoxPage textBoxPage = elementsPage.clickTextBoxMenu();
 	//Click on Element menu - redirect to TextBoxpage
-	textBoxPage.submitData();
+	textBoxPage.submitData( fullname,  email,  currentAddress,  permanentAddress );
+	//D:\Automation_Practice\02Project\Git\SeleniumWithJava\DemoQA\driver\chromedriver.exe
 	
 	}
 }

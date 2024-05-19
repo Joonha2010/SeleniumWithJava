@@ -10,9 +10,9 @@ public class ElementsPage extends Page {
 	}
 
 	public TextBoxPage clickTextBoxMenu() {
-		TextBoxPage textBoxPage = new TextBoxPage(driver);
-		driver.findElement(By.xpath("//span[text()='Text Box']/..")).click();
-		return textBoxPage;
+		
+		driver.findElement(By.xpath("//span[text()='Text Box']")).click();
+		return new TextBoxPage(driver);
 	
 }
 	
