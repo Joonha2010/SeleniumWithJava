@@ -26,9 +26,9 @@ public void submitSuccessfully (){
 	
 	//Click on Element on HOmepage
 	HomePage homePage = new HomePage(driver);
-	
 	ElementsPage elementsPage= homePage.clickElements();
-	elementsPage.zoomOut();
+	
+	//elementsPage.zoomOut();
 	TextBoxPage textBoxPage = elementsPage.clickTextBoxMenu();
 	//Click on Element menu - redirect to TextBoxpage
 	textBoxPage.submitData();
