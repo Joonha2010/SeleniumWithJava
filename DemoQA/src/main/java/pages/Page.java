@@ -17,20 +17,7 @@ public class Page {
 		executor.executeScript("document.body.style.zoom = '50%'");
 	}
 	//scroll to end page
-<<<<<<< HEAD
-			public void scrollToEndPage() {
-				JavascriptExecutor js = (JavascriptExecutor) driver;
-				js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
-			}
-		    public void scrollToElement(By locator) {
-		    	WebElement element = driver.findElement(locator);
-		    	JavascriptExecutor js = (JavascriptExecutor) driver;
-		    	js.executeScript("arguments[0].scrollIntoView(true);", element);
-		    
-		    	
-		    }
 	
-=======
 		public void scrollToEndPage() {
 			JavascriptExecutor js = (JavascriptExecutor) driver;
 			js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
@@ -42,5 +29,5 @@ public class Page {
 	    
 	    	
 	    }
->>>>>>> feature/day11_seleniumframework
+
 }

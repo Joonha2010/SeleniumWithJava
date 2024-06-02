@@ -32,11 +32,7 @@ public void submitSuccessfully (){
 	//Click on Element on HOmepage
 	HomePage homePage = new HomePage(driver);
 	ElementsPage elementsPage= homePage.clickElements();
-<<<<<<< HEAD
-	
-	//elementsPage.zoomOut();
-=======
->>>>>>> feature/day11_seleniumframework
+
 	TextBoxPage textBoxPage = elementsPage.clickTextBoxMenu();
 	//Click on Element menu - redirect to TextBoxpage
 	textBoxPage.submitData( fullname,  email,  currentAddress,  permanentAddress );
